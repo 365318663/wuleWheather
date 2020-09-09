@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/weather_bg">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_citypicker_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="温度趋势图"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <com.litao.ttweather.weathertrendgraph.WeatherTrendGraph
+                android:id="@+id/weatherTrendGraph"
+                android:layout_width="800dp"
+                android:layout_height="300dp"
+                android:background="@color/white"
+                app:axes_color="@color/weather_bg"
+                app:circle_color="@color/weather_bg"
+                app:shadow_color="#58f0f0f0"
+                app:tmp_text_size="14dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

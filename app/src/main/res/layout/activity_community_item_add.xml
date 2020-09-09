@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tintgray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="@color/weather_bg">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_citypicker_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="动态添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="随便说点啥吧..." />
+
+                <com.litao.ttweather.view.MyGridView
+                    android:id="@+id/gv_photoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0"
+                    android:horizontalSpacing="5px"
+                    android:numColumns="3"
+                    android:verticalSpacing="5px"></com.litao.ttweather.view.MyGridView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp">
+
+
+                <Button
+                    android:id="@+id/bt_finish"
+                    android:layout_width="260dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/logoffselect"
+                    android:text="完成"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

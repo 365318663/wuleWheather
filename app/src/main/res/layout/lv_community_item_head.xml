@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tintgray">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:padding="0.1dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:onClick="add"
+            android:background="@drawable/btn_selector_two">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加动态"
+                android:textColor="@color/lv_item_serch_tv_color3"
+
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0.1dp"
+            android:layout_weight="1"
+            android:onClick="about_me"
+            android:background="@drawable/btn_selector_two">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="与我相关"
+                android:textColor="@color/lv_item_serch_tv_color3"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

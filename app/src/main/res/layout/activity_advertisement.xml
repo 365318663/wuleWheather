@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/iv_ad_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon"
+        android:background="@color/tintgray" />
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="40dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"
+        android:text="5S"
+        android:textColor="@color/white" />
+</RelativeLayout>

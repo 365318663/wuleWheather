@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/weather_bg" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您需要删除城市：湘潭？"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        android:padding="0.1dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector_two"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="是"
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.1dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_selector_two"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="否"
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

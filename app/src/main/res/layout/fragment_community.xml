@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tintgray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/weather_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_citypicker_bar_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_fragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="社区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="add"
+            android:padding="10dp"
+            android:src="@drawable/add_white" />
+    </RelativeLayout>
+
+    <com.litao.ttweather.view.UltimateRefreshView
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_community"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/tintgray"
+            android:dividerHeight="10dp"></ListView>
+    </com.litao.ttweather.view.UltimateRefreshView>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tintgray"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/weather_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_tv_size" />
+    </RelativeLayout>
+
+    <!-- 第一个条目 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_my_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector_two"
+        android:clickable="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_member_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:background="@color/tintgray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/iv_member_photo"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游客"
+
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="@dimen/lv_item_serch_tv_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111****1111"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_two"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/iv_setting"
+                android:text="设置"
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="@dimen/lv_item_serch_tv_size" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/lv_item_wuliu_divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_selector_two"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/iv_about"
+                android:text="关于"
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="@dimen/lv_item_serch_tv_size" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 第二个条目 -->
+
+
+</LinearLayout>

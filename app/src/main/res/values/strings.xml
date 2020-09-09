@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">唔乐天气</string>
+    <string name="wind">东北风</string>
+    <string name="humidity">相对湿度</string>
+    <string name="pm25">PM25:</string>
+    <string name="humidity_value">20%</string>
+    <string name="city">湘潭</string>
+    <string name="weather">晴 | 空气良 93 ></string>
+    <string name="temperature">20℃</string>
+    <string name="wind_value">2级</string>
+    <string name="day">今天</string>
+    <string name="tab_home">天气</string>
+    <string name="tab_out">出行建议</string>
+    <string name="tab_community">社区</string>
+    <string name="tab_my">我的</string>
+    <string name="tab_news">实时新闻</string>
+    <string name="weather_simple">晴 | 良</string>
+    <string name="twice_time_exit_app">再按一次退出</string>
+    <string name="startlocation">开始定位</string>
+    <string name="stoplocation">停止定位</string>
+    <string name="progress">正在加载</string>
+</resources>

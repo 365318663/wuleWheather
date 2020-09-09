@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tintgray">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/weather_bg">
+
+        <TextView
+            android:id="@+id/cityname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+
+        <com.litao.ttweather.view.UltimateRefreshView
+            android:id="@+id/refreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+        </com.litao.ttweather.view.UltimateRefreshView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/progress" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.litao.ttweather">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限 -->
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:name="com.litao.ttweather.config.LocationApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 声明service组件 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.litao.ttweather.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <!-- AK鉴权 -->
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Gui0MlOkMGrzT7aAPW8HmrevqpZwpGhj" />  <!-- http://lbsyun.baidu.com/apiconsole/key -->
+        <activity android:name=".activity.AdvertisementActivity"  android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CityActivity"  android:screenOrientation="portrait"></activity>
+        <!--<activity android:name=".activity.HomeActivity"  android:screenOrientation="portrait"></activity>-->
+        <activity android:name=".activity.ProvinceActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CitypickerThreeListActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CityManagerActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LoginActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.RegisterActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.UserInformationActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.UserUpdataPassWord"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SettingActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.NewsActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LookPhotoGalleryActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LookCommunityItemDetailsActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CommunityItemAddActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CommunityAboutMeActivity"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".alximageloader.SelectPhotoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.TemperatureTrendActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.HomeActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

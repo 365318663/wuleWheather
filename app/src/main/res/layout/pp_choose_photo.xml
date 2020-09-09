@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/lv_item_gray_bg" />
+
+    <TextView
+        android:id="@+id/tv_cameral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:background="@drawable/btn_selector_two"
+        android:paddingTop="10dp"
+        android:text="拍照"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/lv_item_wuliu_divider" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="从相册中选取"
+        android:background="@drawable/btn_selector_two"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/lv_item_wuliu_divider" />
+
+    <TextView
+        android:id="@+id/tv_cancell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:background="@drawable/btn_selector_two"
+        android:paddingTop="10dp"
+        android:text="取消"
+        android:textColor="#ff0000"
+        android:textSize="17dp" />
+
+</LinearLayout>

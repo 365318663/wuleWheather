@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/tintgray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/weather_bg"
+            android:layout_height="@dimen/title"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:onClick="back"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_citypicker_bar_back" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_tv_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/btn_selector_two"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_up_psw"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_width="wrap_content"
+                android:text="修改密码"
+                android:textColor="@color/lv_item_serch_tv_color"
+                android:textSize="@dimen/lv_item_serch_tv_size" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="25dp"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tintgray">
+
+        <Button
+            android:id="@+id/bt_logoff"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logoffselect"
+            android:text="注销"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_home_ziliao">17dp</dimen>
+    <dimen name="icon_home_ziliao1">9dp</dimen>
+    <dimen name="serach_ll_height">40dp</dimen>
+    <dimen name="tv_voice_answer">13dp</dimen>
+    <dimen name="rl_home">8dp</dimen>
+    <dimen name="rl_home_top">0dp</dimen>
+    <dimen name="serach_start">30dp</dimen>
+    <dimen name="find_youzhan">42dp</dimen>
+    <dimen name="title">50dp</dimen>
+    <dimen name="title_jiantou">15dp</dimen>
+    <dimen name="title_jiantou_height">18dp</dimen>
+    <dimen name="title_jiantou_width">12dp</dimen>
+    <dimen name="title_tv_size">20dp</dimen>
+    <dimen name="lv_item_serch_rl_margin_top">24dp</dimen>
+    <dimen name="lv_item_serch_tv_size">17dp</dimen>
+    <dimen name="lv_item_serch_tv_size2">13dp</dimen>
+    <dimen name="lv_item_serch_tv_size3">14dp</dimen>
+    <dimen name="my_height">48dp</dimen>
+    <dimen name="icon_serach_start_marginleft">12dp</dimen>
+    <dimen name="tv_serach_start_marginleft">8dp</dimen>
+    <dimen name="tv_serach_start">17dp</dimen>
+    <dimen name="myorder_marginleft">5dp</dimen>
+
+</resources>

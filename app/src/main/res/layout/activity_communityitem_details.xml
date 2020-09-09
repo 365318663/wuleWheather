@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:background="@color/weather_bg">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="back"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_citypicker_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="动态详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_tv_size" />
+        </RelativeLayout>
+
+        <ScrollView
+
+            android:id="@+id/sv_all"
+            android:layout_below="@id/rl_title"
+            android:layout_above="@+id/ll_generate_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/tintgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="昵称"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_publish_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间"
+                            android:textColor="@color/gray"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="哒哒！"
+                    android:textSize="16dp" />
+
+
+                <com.litao.ttweather.view.MyGridView
+                    android:id="@+id/gv_photoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible">
+
+                </com.litao.ttweather.view.MyGridView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <LinearLayout
+                            android:id="@+id/ll_laud"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/iv_laud"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/iv_laud_selector" />
+
+                            <TextView
+                                android:id="@+id/tv_laud"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/iv_comment_selector" />
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/tv_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingBottom="2dp"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/iv_delete"
+                            android:layout_width="41dp"
+                            android:layout_height="21dp"
+                            android:visibility="gone"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/iv_delete_selector" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_comment_num"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="评论"
+                    android:padding="10dp"
+                    android:background="@color/tintgray"/>
+                <com.litao.ttweather.view.MyListView
+                    android:id="@+id/mlv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.litao.ttweather.view.MyListView>
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_generate_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_all"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tintgray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/logoffselect"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

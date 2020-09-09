@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="weather_bg">#3399FF</color>
+
+    <!-- transparent color info -->
+    <color name="trans_black">#86000000</color>
+    <!-- 黑色 -->
+    <color name="trans_gray">#86222222</color>
+    <!-- 灰色半透明首页gallery title -->
+
+
+    <!-- common color -->
+    <color name="blue">#0000ff</color>
+    <!-- 蓝色 -->
+    <color name="red">#ff0000</color>
+    <!-- 红色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 白色 -->
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+    <color name="green">#008000</color>
+    <!-- 绿色 -->
+    <color name="slategrey">#708090</color>
+    <!-- 灰石色 -->
+    <color name="lightgray">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="dimgrey">#333333</color>
+    <!-- 深灰色 -->
+    <color name="darkgray">#666666</color>
+    <!-- 暗灰色 -->
+    <color name="tintgray">#f0f0f0</color>
+    <!-- 浅灰色 -->
+    <color name="orange">#f9700a</color>
+    <!-- 橙色 （价格） -->
+    <color name="lawngreen">#7cfc00</color>
+    <!-- 草绿色 -->
+    <color name="darkred">#8b0000</color>
+    <!-- 暗红色 -->
+    <color name="darkorange">#ff8c00</color>
+    <!-- 暗桔黄色 -->
+    <color name="coral">#ff7f50</color>
+    <!-- 珊瑚色 -->
+    <color name="tab_text_corlor">#1296db</color>
+    <!-- tabtextcolor -->
+    <color name="tab_text_corlor_nor">#8a8a8a</color>
+    <color name="main_antivrus_pressed">#ababab</color>
+    <color name="traffic_tou_ming_color">#ffffff</color>
+    <color name="icon_home_ziliao">#cb3472</color>
+    <color name="icon_home_ziliao1">#d3d3d3</color>
+    <color name="icon_home_message">#ffbf0d</color>
+    <color name="icon_home_money">#5985af</color>
+    <color name="icon_home_order">#15c0a7</color>
+    <color name="icon_home_location">#ea4c3b</color>
+    <color name="icon_home_us">#76b0d0</color>
+    <color name="lv_voice">#ebebeb</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- wheel的画笔颜色 -->
+    <color name="lv_item_serch_tv_color">#4C4C4C</color>
+    <color name="lv_item_serch_tv_color2">#8d8e8d</color>
+    <color name="lv_item_serch_tv_color3">#8a8a8a</color>
+    <color name="lv_popup">#d4d4d4</color>
+    <color name="tv_seract_start">#4C4C4C</color>
+    <color name="tv_consume_press">#3594ff</color>
+    <color name="tv_wuliudetail">#ff5000</color>
+    <color name="gray">#9fa0a0</color>
+    <color name="c_blue">#40c2fc</color>
+    <color name="activity_bg">#ffe7e7e7</color>
+    <color name="color_text_01">#ffc5c9ce</color>
+    <color name="color_text_03">#ffb1b7be</color>
+    <color name="split_line_color">#ffc9d1d9</color>
+    <color name="split_line_bootom_color">#ffa8adb3</color>
+    <color name="input_stock">#ffbdc7d8</color>
+    <color name="color_text_02">#ff181c20</color>
+    <color name="location_circle_bg">#320483b9</color>
+    <color name="indicator_color">#fffff18f</color>
+    <color name="tabs_click">#ff8a153e</color>
+    <color name="bank_bg01">#ff002142</color>
+    <color name="bank_bg02">#ffe2607b</color>
+    <color name="bank_FF6C6C6C">#FF6C6C6C</color>
+    <color name="text_color_02">#FF6C6C6C</color>
+    <color name="sort_catagory">#FFE0E0E0</color>
+
+
+
+    <color name="liji_c_blue">#26A5FF</color>
+    <color name="liji_material_blue_500">#03a9f4</color>
+    <color name="liji_material_blue_700">#0288d1</color>
+    <color name="liji_material_red_500">#e51c23</color>
+    <color name="liji_material_red_700">#d01716</color>
+
+
+</resources>
